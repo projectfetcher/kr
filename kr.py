@@ -1540,7 +1540,7 @@ def crawl_company_website_deep(website_url: str, job_title: str) -> dict:
                     r"ansan|anyang|bucheon|jeju|chuncheon|gangneung|"
                     r"wonju|pohang|gyeongju|masan|"
                     r"seoul district|gangnam|jongno|mapo|"
-                    r"yeongdeungpo|songpa|nowon"",
+                    r"yeongdeungpo|songpa|nowon",
                     full_text, re.I)
                 if addr_m:
                     result["address"] = addr_m.group(0).strip()[:250]
